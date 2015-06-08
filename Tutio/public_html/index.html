@@ -61,65 +61,18 @@
         </div>
         <!-- Start home section -->
         <div id="home">
-            <!-- Start cSlider -->
-            <div id="da-slider" class="da-slider">
-                <!-- <div class="triangle"></div> -->
-                <!-- mask elemet use for masking background image -->
-                <!-- <div class="mask"></div> -->
-                <!-- All slides centred in container element -->
-                <div class="container" style="width:100%">
-                    <!-- Start first slide -->
-                    <div class="da-slide">
-                        <div class="da-img">
-                            <h2 class="fittext2">Welcome to pluton theme</h2>
-                            <h4>Clean & responsive</h4>
-                            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-                            <a href="#" class="da-link button">Read more</a>
-                            <img src="images/Slider01.jpg" alt="image01">
-                        </div>
-                    </div>
-                    <!-- End first slide -->
-                    <!-- Start second slide -->
-                    <div class="da-slide">
-                        <h2>Easy management</h2>
-                        <h4>Easy to use</h4>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                        <a href="#" class="da-link button">Read more</a>
-                        <div class="da-img">
-                            <img src="images/Slider02.jpg" alt="image02" width="320">
-                        </div>
-                    </div>
-                    <!-- End second slide -->
-                    <!-- Start third slide -->
-                    <div class="da-slide">
-                        <h2>Revolution</h2>
-                        <h4>Customizable</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <a href="#" class="da-link button">Read more</a>
-                        <div class="da-img">
-                            <img src="images/Slider03.jpg" alt="image03" width="320">
-                        </div>
-                    </div>
-                    <!-- Start third slide -->
-                    <!-- Start forth slide -->
-                    <div class="da-slide">
-                        <h2>Revolution</h2>
-                        <h4>Customizable</h4>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                        <a href="#" class="da-link button">Read more</a>
-                        <div class="da-img">
-                            <img src="images/Slider04.jpg" alt="image04" width="320">
-                        </div>
-                    </div>
-                    <!-- Start forth slide -->
-                    <!-- Start cSlide navigation arrows -->
-                    <div class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </div>
-                    <!-- End cSlide navigation arrows -->
-                </div>
-            </div>
+            <h1 class="title">
+                <span class="online">online</span>
+                <span class="handlee">Tutors</span>
+                <span class="desc">For Students with Special Needs and Learning Disabilities</span>
+            </h1>
+            <form name="search" class="search-big"><input type="search" placeholder="Search for tutors or subjects..."><input type="submit" value=" "></form>
+            <ul class="bxslider">
+                <li><img src="images/slider01.jpg" alt=""></li>
+                <li><img src="images/slider02.jpg" alt=""></li>
+                <li><img src="images/slider03.jpg" alt=""></li>
+                <li><img src="images/slider04.jpg" alt=""></li>
+            </ul>
         </div>
         <!-- End home section -->
         <!-- About Tutio section start -->
@@ -306,6 +259,11 @@
         <script type="text/javascript" src="js/jquery.cslider.js"></script>
         <script type="text/javascript" src="js/jquery.placeholder.js"></script>
         <script type="text/javascript" src="js/jquery.inview.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.bxslider').bxSlider();
+              });
+        </script>
         <!-- css3-mediaqueries.js for IE8 or older -->
         <!--[if lt IE 9]>
             <script src="js/respond.min.js"></script>

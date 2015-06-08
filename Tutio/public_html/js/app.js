@@ -34,8 +34,7 @@
     $(window).resize(function () {
         containerWidth = $('.container').width();
         $(".triangle").css({
-            "border-left": containerWidth / 2 + 'px outset transparent',
-            "border-right": containerWidth / 2 + 'px outset transparent'
+            
         });
     });
 
