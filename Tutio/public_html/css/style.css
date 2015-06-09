@@ -34,6 +34,10 @@ a:hover {
     color: #FECE1A;
     text-decoration:none;
 }
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #FFF !important;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
@@ -506,8 +510,17 @@ p {
     margin: 30px auto 30px;
     list-style: none;
     font: 300 22px Lato;
+    width: 100%;
+    text-align: center;
 }
-.reqs-text li { display: inline-block; }
+.reqs-text li { display: inline-block; background: url("../images/divider.png") no-repeat left top; height: 222px; padding: 0 2% 0 4%; }
+.reqs-text li:first-child { background: none; }
+.reqs-text li span { display: block; width: 82px; height: 66px; max-width: 82px; max-height: 66px; background: url("../images/icons.png") no-repeat top left; margin: 40px auto 40px; }
+.reqs-text li.camera span { background-position: top left; }
+.reqs-text li.microphone span { background-position: 0 -66px; }
+.reqs-text li.internet span { background-position: 0 -132px; }
+.reqs-text li.payment span { background-position: 0 -198px; }
+.reqs-text li.computer span { background-position: 0 -264px; }
 
 /*
 3.3 How it works

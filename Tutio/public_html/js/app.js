@@ -27,7 +27,7 @@
     //Get width of container
     var containerWidth = $('.section .container').width();
     //Resize animated triangle
-    $(".triangle").css({
+    /*$(".triangle").css({
         "border-left": containerWidth / 2 + 'px outset transparent',
         "border-right": containerWidth / 2 + 'px outset transparent'
     });
@@ -37,7 +37,7 @@
             
         });
     });
-
+*/
 
     //Initialize header slider.
     $('#da-slider').cslider();

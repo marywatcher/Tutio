@@ -50,7 +50,7 @@
 		pagerCustom: null,
 		
 		// CONTROLS
-		controls: true,
+		controls: false,
 		nextText: 'Next',
 		prevText: 'Prev',
 		nextSelector: null,
