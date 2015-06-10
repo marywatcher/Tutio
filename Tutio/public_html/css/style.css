@@ -646,10 +646,11 @@ p {
     color: #FFF;
     z-index: 99;
     text-align: center;
+    font-size: 23px;
 }
-#home h1.title .online { border: 1px solid #FFF; border-width: 1px 0; text-transform: uppercase; font: 900 23px Lato; letter-spacing: 0.2em; padding: 5px 0; }
-#home h1.title .handlee { display: block; font-size: 150px; margin-top: 70px; }
-#home h1.title .desc { font: 300 32px Lato; line-height: 1.4em; font-style: italic; display: block; margin-top: 27%; }
+#home h1.title .online { border: 1px solid #FFF; border-width: 1px 0; text-transform: uppercase; font: 900 1em Lato; letter-spacing: 0.2em; padding: 5px 0; }
+#home h1.title .handlee { display: block; font-size: 6.52em; margin-top: 0.48em; }
+#home h1.title .desc { font: 300 1.39em Lato; line-height: 1.4em; font-style: italic; display: block; margin-top: 3em; }
 
 #home form.search-big {
     position: absolute;
@@ -661,10 +662,10 @@ p {
 #home form.search-big input[type="search"]{
     background: #FFF;
     width: 100%;
-    height: 60px;
+    height: 2.5em;
     font: 400 24px Lato;
     font-style: italic;
-    text-indent: 20px;
+    text-indent: 0.83em;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
@@ -744,6 +745,16 @@ p {
         padding-left:0;
         padding-right:0;
     }
+    #home h1.title { font-size: 10px;}
+    #home form.search-big input[type="search"]{
+        font-size: 18px;
+    }
+    #home form.search-big input[type="submit"]{
+        background-size: 100%;
+        height: 45px;
+        width: 48.75px;
+    }
+    
     .navbar-fixed-top, .navbar-fixed-bottom {
         position: fixed;
     }
