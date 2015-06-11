@@ -321,8 +321,8 @@ p {
     box-shadow:none;
     text-align:center;
 }
-.thumbnail.teacher-tracking {background:url('../images/teacher-tracking.jpg') no-repeat top left; min-height: 609px;}
-.thumbnail.flexibility {background:url('../images/flexibility.jpg') no-repeat 80% top; min-height: 555px; margin-top: -220px; }
+.thumbnail.teacher-tracking {background:url('../images/teacher-tracking.jpg') no-repeat top left; background-size:; max-height: 609px;}
+.thumbnail.flexibility {background:url('../images/flexibility.jpg') no-repeat 80% top; max-height: 555px; margin-top: -220px; }
 .thumbnail.live-tutor-interaction {background:url('../images/live-tutor-interaction.jpg') no-repeat 5% top; height: 460px; margin-top: -280px; }
 .thumbnail.find-right-educator {background:url('../images/find-right-educator.jpg') no-repeat 60% top; height: 750px; margin-top: 0px; }
 
@@ -528,8 +528,10 @@ p {
 #how-it-works .primary-section { background: #FFF url("../images/how-it-works.jpg") no-repeat center bottom; min-height: 1085px; color: #222; }
 #how-it-works .title.handlee h1 { color: #271325; }
 
-.for-students, .for-tutors { width: 270px; padding-bottom: 40px; }
+.for-students, .for-tutors { width: 270px; padding-bottom: 40px; position: relative; }
 .for-students {
+    left: 10%;
+    margin-top: 20%;
     background: #fcddac; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZGRhYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjZjRkNmE3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZjlmMGUyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjklIiBzdG9wLWNvbG9yPSIjZmZlNGJhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y1YzY3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -542,6 +544,7 @@ p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcddac', endColorstr='#f5c67d',GradientType=0 ); /* IE6-8 */
 }
 .for-tutors {
+    right: 10%;
     background: #c5d7e1; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M1ZDdlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjYjZjZWRjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDIlIiBzdG9wLWNvbG9yPSIjZDBkZWU1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzAlIiBzdG9wLWNvbG9yPSIjZTFlNmU4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4ZDhkNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -739,6 +742,21 @@ p {
     #home h1.title { font-size: 18px;}
     #home h1.title .desc {margin-top: 3.2em;}
     #pricing .title.lato h1 { margin-top: 0.8em; }
+    
+    .reqs-text li { border-left: 1px solid #b5bec4; background: none; padding: 0 3%; }
+    .reqs-text li:first-child { border-left: 0; }
+    
+}
+
+@media (max-width: 1200px) {
+    .reqs-text li { padding: 0 2%; }
+    
+    .reqs-text li span { width: 60px; height: 48.2px; max-width: 60px; max-height: 48.2px; background-size: 60px; }
+    .reqs-text li.microphone span { background-position: 0 -48.2px; }
+    .reqs-text li.internet span { background-position: 0 -96.4px; }
+    .reqs-text li.payment span { background-position: 0 -144.6px; }
+    .reqs-text li.computer span { background-position: 0 -192.8px; }
+    
 }
 @media (max-width: 1110px) {
     #home h1.title { font-size: 18px; width: 32%; left: 17.5%; }
@@ -751,6 +769,9 @@ p {
         height: 45px;
         width: 48.75px;
     }
+    
+    .for-students { left: 0; }
+    .for-tutors { right: 0; }
 }
  @media (min-width: 1200px) {
     .thumbnail .more {
@@ -769,6 +790,9 @@ p {
         padding-left:0;
         padding-right:0;
     }
+    #requirements .container { width: 100%; }
+    .reqs-text { font-size: 20px; }
+    
     .navbar .btn { margin-top: 23px; }
     .navbar form { width: 40%; }
     #home form.search-big { width: 60%; left: 20%; }
@@ -822,6 +846,21 @@ p {
     }
 }
 @media (max-width: 767px) {
+    #how-it-works .primary-section { background-image: none; min-height: auto; }
+    .for-students {margin-top: 0;}
+    
+    .section { padding-bottom: 20px;}
+    
+    #requirements.section { padding-bottom: 0; }
+    .reqs-text li { display: block; height: 222px; border-left: 0; height: auto; padding-bottom: 50px; }
+    .reqs-text li span { width: 82px; height: 66px; max-width: 82px; max-height: 66px; background-size: 82px; margin: 20px auto 20px; }
+    .reqs-text li.camera span { background-position: top left; }
+    .reqs-text li.microphone span { background-position: 0 -66px; }
+    .reqs-text li.internet span { background-position: 0 -132px; }
+    .reqs-text li.payment span { background-position: 0 -198px; }
+    .reqs-text li.computer span { background-position: 0 -264px; }
+    .reqs-text { font-size: 22px; }
+    
     #pricing { max-height: none !important; }
     .price-table { margin-top: 40px;}
     #pricing .span2 { width: 45%; }
