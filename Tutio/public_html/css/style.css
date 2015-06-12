@@ -307,9 +307,9 @@ p {
 /*
 2.3 Thumbnails - Predefined bootstrap's thumbnail class.
 **********/
+.thumbnails { background: url("../images/why-tutio.gif") no-repeat center top; }
  .thumbnail {
     width:100%;
-    height:100%;
     padding:0;
     overflow: hidden;
     position: relative;
@@ -321,22 +321,35 @@ p {
     box-shadow:none;
     text-align:center;
 }
-.thumbnail.teacher-tracking {background:url('../images/teacher-tracking.jpg') no-repeat top left; background-size:; max-height: 609px;}
-.thumbnail.flexibility {background:url('../images/flexibility.jpg') no-repeat 80% top; max-height: 555px; margin-top: -220px; }
-.thumbnail.live-tutor-interaction {background:url('../images/live-tutor-interaction.jpg') no-repeat 5% top; height: 460px; margin-top: -280px; }
-.thumbnail.find-right-educator {background:url('../images/find-right-educator.jpg') no-repeat 60% top; height: 750px; margin-top: 0px; }
+.teacher-tracking img { margin:7% 0 0 19%; float: left; }
+.flexibility img {margin: 20% 20% 0 0; float: right;}
+.live-tutor-interaction img { margin: 24% 0 0 20%; float: left; }
+.find-right-educator img { margin: 26% 20% 0 0; float: right; }
+.flexibility div,
+.find-right-educator div { float: left; }
+.teacher-tracking div,
+.live-tutor-interaction div { float: right; }
 
-.thumbnail .copy {
-    padding-top: 145px;
-    text-align: left;
+.flexibility div { margin-top: 16%; }
+.live-tutor-interaction div { margin-top: 23%; }
+.find-right-educator div { margin-top: 17%;}
+
+.thumbnail img { 
+    -webkit-border-radius: 235px;
+    -moz-border-radius: 235px; 
+    border-radius: 235px; 
+    -webkit-box-shadow: inset 10px 12px 76px 0px rgba(127,127,127,0.75);
+    -moz-box-shadow: inset 10px 12px 76px 0px rgba(127,127,127,0.75);
+    box-shadow: inset 10px 12px 76px 0px rgba(127,127,127,0.75);
 }
-.thumbnail.flexibility .copy { margin-left: 40px; }
-
+.thumbnail .copy {
+    text-align: left;
+    width: 49%;
+}
 .thumbnail .copy h3 {color: #271325; font: 34px Handlee;}
 .thumbnail .copy h3 span { font: 300 22px Lato; font-style: italic; color: #222; }
-.thumbnail .copy p {text-align: left; color: #222; text-align: left !Important; margin: 0 !Important; font-size: 18px; line-height: 2em; padding-top: 25px; }
-.thumbnail .copy.pull-right { margin-left: 45%; float: none; }
-.thumbnail .copy.pull-left { margin-right: 45%; float: none; }
+.secondary-section#why-tutio .thumbnail .copy p {width: 80%; text-align: left; color: #222; text-align: left !Important; margin: 0 !Important; font-size: 18px; line-height: 2em; padding-top: 25px; }
+
 .thumbnail .more {
     display:block;
     z-index:4;
@@ -738,7 +751,7 @@ p {
      #home h1.title { font-size: 21px;}
 }
 @media (max-width: 1250px) {
-    .thumbnail { width:70%; }
+    
     #home h1.title { font-size: 18px;}
     #home h1.title .desc {margin-top: 3.2em;}
     #pricing .title.lato h1 { margin-top: 0.8em; }
@@ -757,6 +770,15 @@ p {
     .reqs-text li.payment span { background-position: 0 -144.6px; }
     .reqs-text li.computer span { background-position: 0 -192.8px; }
     
+    #why-tutio .container { width: 966px; }
+    .thumbnails { margin-left: 0;}
+    .teacher-tracking img { margin-left: 10%; }
+    .flexibility img {margin: 25% 18% 0 0; }
+    .live-tutor-interaction img { margin-left: 13%; }
+    .find-right-educator img { margin: 30% 14% 0 0; }
+    
+    .flexibility div { margin-top: 20%; }
+    
 }
 @media (max-width: 1110px) {
     #home h1.title { font-size: 18px; width: 32%; left: 17.5%; }
@@ -773,7 +795,18 @@ p {
     .for-students { left: 0; }
     .for-tutors { right: 0; }
 }
+@media (max-width: 1000px) {
+    .thumbnails { background-size: 900px; }
+    #why-tutio .container { width: 900px; }
+    .thumbnail img { width: 218px; }
+    
+    .flexibility div { margin-top: 15%; }
+    .flexibility img { margin-top: 18%; }
+    .live-tutor-interaction div { margin-top: 10%; }
+    .live-tutor-interaction img { margin-top: 13%; }
+}
  @media (min-width: 1200px) {
+     .thumbnails, .thumbnails li {margin-left: 0; float: none;}
     .thumbnail .more {
         margin-left:-41px;
         width:80px;
@@ -790,6 +823,17 @@ p {
         padding-left:0;
         padding-right:0;
     }
+    
+    .secondary-section#why-tutio p { margin-bottom: 10%; width: 100%}
+    #why-tutio .container { width: 724px; }
+    .thumbnails { background-size: 724px; }
+    .thumbnail img { width: 176px; }
+    .thumbnail .copy h3 { font-size: 1.8em; }
+    .thumbnail .copy h3 span { font-size: 0.7em; }
+    .secondary-section#why-tutio .thumbnail .copy p { font-size: 1em; width: 100%; padding-top: 5%; }
+    .flexibility div { margin-top: 8.5%; }
+    .find-right-educator div { margin-top: 22%;}
+    
     #requirements .container { width: 100%; }
     .reqs-text { font-size: 20px; }
     
@@ -846,6 +890,23 @@ p {
     }
 }
 @media (max-width: 767px) {
+    
+    #why-tutio .container { width: auto; }
+    .thumbnails { background: none; }
+    .thumbnail img {
+        -webkit-border-radius: 40px !important;
+        -moz-border-radius: 40px !important;
+        border-radius: 40px !important;
+    }
+    .thumbnail .copy { width: 52%; }
+    .flexibility img, .find-right-educator img { margin-right: 10%;}
+    .live-tutor-interaction img { margin-left: 10%;}
+    
+    .find-right-educator div,
+    .flexibility div
+     { margin-top: 5%; }
+     .find-right-educator img { margin-top: 10%; }
+    
     #how-it-works .primary-section { background-image: none; min-height: auto; }
     .for-students {margin-top: 0;}
     
@@ -879,5 +940,9 @@ p {
     }
     .price-column, .testimonial {
         margin-top:30px;
+    }
+    
+    .footer div {
+        margin: 0 2%;
     }
 }
