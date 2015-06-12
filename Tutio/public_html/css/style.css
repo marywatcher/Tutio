@@ -924,7 +924,7 @@ p {
     
     #pricing { max-height: none !important; }
     .price-table { margin-top: 40px;}
-    #pricing .span2 { width: 45%; }
+    #pricing .span2 { width: 50.5%; }
     #pricing .row-fluid [class*="span"] {margin: 0 auto 20px;}
     
     .primary-section .brand {float: none; margin: 0 auto; border-bottom: 1px solid white; padding-bottom: 10px; margin-bottom: 20px; }
