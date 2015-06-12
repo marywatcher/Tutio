@@ -892,7 +892,7 @@ p {
 @media (max-width: 768px) {
     
     #home h1.title { width: 34.5%; }
-    #home h1.title .desc { margin-top: 1em; }
+    #home h1.title .desc { margin-top: 1.3em; }
     #why-tutio .container { width: auto; }
     .thumbnails { background: none; }
     .thumbnail img {
@@ -910,8 +910,8 @@ p {
      .find-right-educator img { margin-top: 10%; }
     
     #how-it-works .primary-section { background-image: none; min-height: auto; }
-    .for-students {margin-top: 0; margin-left: 20%;}
-    .for-tutors {margin-right: 20%;}
+    .for-students {margin-top: 0; margin-left: 10%;}
+    .for-tutors {margin-right: 10%;}
     
     .section { padding-bottom: 20px;}
     
