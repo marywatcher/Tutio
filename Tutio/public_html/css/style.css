@@ -951,6 +951,7 @@ p {
 }
 
 /* iPhone 5 Portrait */
+@media (max-width: 320px) { body { border: 2px solid grey; } }
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -960,6 +961,7 @@ p {
 }
 
 /* iPhone 5 Landscape */
+@media (max-width: 568px) { body { border: 2px solid purple; } }
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
@@ -969,6 +971,7 @@ p {
 }
 
 /* iPhone 6 Portrait */
+@media (max-width: 375px) { body { border: 2px solid orange; } }
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -978,6 +981,7 @@ p {
 }
 
 /* iPhone 6 Landscape */
+@media (max-width: 667px) { body { border: 2px solid pink; } }
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -987,6 +991,7 @@ p {
 }
 
 /* iPhone 6+ Portrait */
+@media (max-width: 414px) { body { border: 2px solid yellow; } }
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -996,6 +1001,7 @@ p {
 }
 
 /* iPhone 6+ Landscape */
+@media (max-width: 736px) { body { border: 2px solid green; } }
 @media only screen 
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
@@ -1005,6 +1011,7 @@ p {
 }
 
 /* Android Portrait */
+@media (max-width: 360px) { body { border: 2px solid blue; } }
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
@@ -1014,6 +1021,7 @@ p {
 }
 
 /* Android Landscape */
+@media (max-width: 640px) { body { border: 2px solid red; } }
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
