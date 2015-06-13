@@ -950,82 +950,40 @@ p {
     }
 }
 
-/* iPhone 5 Portrait */
-@media (max-width: 320px) { body { border: 2px solid grey; } }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-      body { border: 2px solid grey; }
-}
-
-/* iPhone 5 Landscape */
-@media (max-width: 568px) { body { border: 2px solid purple; } }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    body { border: 2px solid purple; }
-}
-
-/* iPhone 6 Portrait */
-@media (max-width: 375px) { body { border: 2px solid orange; } }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-    body { border: 2px solid orange; }
-}
-
-/* iPhone 6 Landscape */
-@media (max-width: 667px) { body { border: 2px solid pink; } }
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-    body { border: 2px solid pink; }
-}
-
-/* iPhone 6+ Portrait */
-@media (max-width: 414px) { body { border: 2px solid yellow; } }
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-      body { border: 2px solid yellow; }
-}
-
-/* iPhone 6+ Landscape */
-@media (max-width: 736px) { body { border: 2px solid green; } }
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-      body { border: 2px solid green; }
-}
-
-/* Android Portrait */
-@media (max-width: 360px) { body { border: 2px solid blue; } }
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-      body { border: 2px solid blue; }
-}
-
-/* Android Landscape */
-@media (max-width: 640px) { body { border: 2px solid red; } }
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-      body { border: 2px solid red; }
+@media (max-width: 640px) {
+    #home form.search-big { width: 75%; left: 12.5%; top: 60%; }
+    #home form.search-big input[type="submit"] {right: -5px;}
+    #home h1.title { width: 45%; left: 16%; top: 8%; margin: 0; }
+    #home h1.title .online { border: 0; text-transform: none; font: 400 0.8em Lato; letter-spacing: 0; margin: 0; padding: 0;}
+    #home h1.title .handlee { display: inline; text-transform: lowercase; font: 400 0.8em Lato; margin-top: 0; margin: 0}
+    #home h1.title .desc { display: inline; text-transform: lowercase; font: 400 0.8em Lato; margin-top: 0; margin: 0}
+    .navbar-fixed-top {
+        min-height: 45px;
+        height: 45px;
+    }
+    .navbar-fixed-top .navbar-inner { padding-bottom: 10px; }
+    .navbar .brand { padding: 8px 0 0 2.5%; }
+    .navbar .brand img { width: 48px; height: 33.6px; }
+    .navbar form {
+        width: 50%;
+        left: 5%;
+        top: 10px;
+        margin-bottom: 0;
+    }
+    .navbar .btn { margin-top: 8px; }
+    
+    .for-students, .for-tutors {
+        float: none;
+        margin: 0 auto !important;
+        width: 80%;
+        padding-bottom: 10px;
+        margin-bottom: 30px !important;
+    }
+    #how-it-works .primary-section h3 {
+        font-size: 2em;
+        padding: 10px 0;
+    }
+    .for-students li, .for-tutors li { font-size: 1.1em; line-height: 1.5em; padding: 20px; background-size: 15px }
+    
+    #pricing.section .container { padding-top: 0; }
 }
