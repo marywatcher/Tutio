@@ -953,10 +953,10 @@ p {
 @media (max-width: 640px) {
     #home form.search-big { width: 75%; left: 12.5%; top: 60%; }
     #home form.search-big input[type="submit"] {right: -5px;}
-    #home h1.title { width: 45%; left: 16%; top: 8%; margin: 0; }
-    #home h1.title .online { border: 0; text-transform: none; font: 400 0.8em Lato; letter-spacing: 0; margin: 0; padding: 0;}
-    #home h1.title .handlee { display: inline; text-transform: lowercase; font: 400 0.8em Lato; margin-top: 0; margin: 0}
-    #home h1.title .desc { display: inline; text-transform: lowercase; font: 400 0.8em Lato; margin-top: 0; margin: 0}
+    #home h1.title { width: 40%; left: 16%; top: 13%; margin: 0; }
+    #home h1.title .online { font: 400 0.8em Lato; letter-spacing: 0; margin: 0; padding: 0;}
+    #home h1.title .handlee { font: 400 2em Handlee; margin-top: 0; margin: 0}
+    #home h1.title .desc { display: inline; text-transform: lowercase; font: 400 1em Lato; margin-top: 0; margin: 0; font-style: italic;}
     .navbar-fixed-top {
         min-height: 45px;
         height: 45px;
