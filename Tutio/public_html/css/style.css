@@ -950,13 +950,14 @@ p {
     }
 }
 
+/* for Android */
 @media (max-width: 640px) {
     #home form.search-big { width: 75%; left: 12.5%; top: 60%; }
     #home form.search-big input[type="submit"] {right: -5px;}
-    #home h1.title { width: 40%; left: 16%; top: 13%; margin: 0; }
-    #home h1.title .online { font: 400 0.8em Lato; letter-spacing: 0; margin: 0; padding: 0;}
-    #home h1.title .handlee { font: 400 2em Handlee; margin-top: 0; margin: 0}
-    #home h1.title .desc { display: inline; text-transform: lowercase; font: 400 1em Lato; margin-top: 0; margin: 0; font-style: italic;}
+    #home h1.title { width: 60%; left: 5%; top: 13%; margin: 0; }
+    #home h1.title .online { font: 1.5em Handlee; letter-spacing: 0; margin: 0; padding: 0; text-transform: capitalize; display: inline; border: 0}
+    #home h1.title .handlee { font: 1.5em Handlee; margin-top: 0; margin: 0; display: inline; }
+    #home h1.title .desc { display: block; text-transform: lowercase; font: 400 1em Lato; margin-top: 0; line-height: 1.2em; margin: 0; font-style: italic; position: relative; top: -10px;}
     .navbar-fixed-top {
         min-height: 45px;
         height: 45px;
@@ -986,4 +987,23 @@ p {
     .for-students li, .for-tutors li { font-size: 1.1em; line-height: 1.5em; padding: 20px; background-size: 15px }
     
     #pricing.section .container { padding-top: 0; }
+}
+
+/* iPhone6 Landscape */
+@media (max-width: 667px) {
+    #home h1.title { width: 45%; left: 10%;}
+    #home h1.title .desc { margin-top: 0.5em; }
+    
+    .for-students { margin-left: 5%;}
+    .for-tutors { margin-right: 5%; }
+}
+
+/* iPhone 6+ Portrait */
+@media (max-width: 414px) {
+    #home h1.title { width: 55% !important; left: 7% !important; }
+}
+
+/* iPhone 6+ Landscape */
+@media (max-width: 736px) {
+    #home h1.title { width: 45%; left: 13%; }
 }
