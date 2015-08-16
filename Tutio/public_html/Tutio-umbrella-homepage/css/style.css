@@ -59,7 +59,7 @@ p { width: 70%; margin: 0 auto; }
 ********************************************************************/
 @media (max-width: 1024px) {
     p { width: 80%; }
-    a { margin-top: 24%; }
+    a { margin-top: 14%; }
     a.Tedu { width: 55%; }
     a.Thealth { width: 45%; }
 }
@@ -77,7 +77,7 @@ p { width: 70%; margin: 0 auto; }
 }
 @media (max-width: 800px) {
     body { background-size: 180%; background-position: 37% 50% }
-    a { margin-top: 35%; width: 45% !important; }
+    a { margin-top: 40%; width: 45% !important; }
     a.Thealth { margin-left: 7% !important; }
     p { width: 95%; }
 }
@@ -95,16 +95,4 @@ p { width: 70%; margin: 0 auto; }
     a.Thealth { margin-left: 0 !important; }
     p { width: 75%; }
     a img { width: 45%; margin-top: 30%; }
-}
-/* iPhone6 Landscape */
-@media (max-width: 667px) {
-    
-}
-/* iPhone 6+ Portrait */
-@media (max-width: 414px) {
-    
-}
-/* iPhone 6+ Landscape */
-@media (max-width: 736px) {
-    
 }
