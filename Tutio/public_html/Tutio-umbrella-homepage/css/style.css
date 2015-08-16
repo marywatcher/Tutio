@@ -1,0 +1,110 @@
+/* Table of content
+1.General - This is created general styles and overide some bootstrap classes.
+2.Layout
+ 2.1 Animations
+ 2.2 Buttons
+ 2.3 Thumbnail - overide bootstrap thumbnail and add mased effect
+ 2.4 Social icons -style for social icons list
+3 Sections - definition for section and subsection
+ 3.1 Why Tutio
+ 3.2 Requirements
+ 3.3 How it works
+ 3.4 Pricing
+ 3.5 Home
+ 3.6 Footer
+4 Responsive 
+**********************************************************************/
+
+/*
+1. General
+**********************************************************************/
+ body {
+    font-family:'Lato', sans-serif;
+    background: #e6e6e6 url("../images/bg.gif") no-repeat top left;
+    background-size: cover;
+    color: #FFF;
+    font-size:19px;
+    line-height:1.8em;
+    font-weight:300;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color:#FFF;
+    text-decoration: none;
+    display: block;
+    width: 49.8%;
+    text-align: center;
+    float: left;
+    transition: all 0.3s ease 0.1s;
+    margin-top: 18%;
+    position: relative;
+    top: 0;
+    padding-bottom: 20px;
+}
+a.Thealth:hover { text-shadow: 1px 1px 2px #630E19; }
+a:hover {
+    top: -3px;
+    color: #FFF;
+    text-decoration:none;
+    text-shadow: 1px 1px 2px #67063C;
+}
+a img { padding: 0 5% 30px; margin-bottom: 30px; border-bottom: 1px solid rgba(255, 255, 255, 0.5); max-width: 100%; }
+a:hover img { box-shadow: 0px 2px 0px #b1176d; }
+a.Thealth:hover img { box-shadow: 0px 2px 0px #CA1D34; }
+p { width: 70%; margin: 0 auto; }
+
+/*
+4 Responsive
+********************************************************************/
+@media (max-width: 1024px) {
+    p { width: 80%; }
+    a { margin-top: 24%; }
+    a.Tedu { width: 55%; }
+    a.Thealth { width: 45%; }
+}
+@media (max-width: 979px) {
+    body {
+        background-image: url("../images/bg-full.gif");
+        background-size: 170%;
+        background-position: -13em -1em;
+        font-size: 1em;
+    }
+    a { margin-top: 20%; }
+    a.Thealth { margin-left: 0.2%; }
+    a img { margin-bottom: 20px; width: 30%; padding-bottom: 20px; }
+    p { width: 85%; }
+}
+@media (max-width: 800px) {
+    body { background-size: 180%; background-position: 37% 50% }
+    a { margin-top: 35%; width: 45% !important; }
+    a.Thealth { margin-left: 7% !important; }
+    p { width: 95%; }
+}
+@media (max-width: 736px) {
+    a { margin-top: 13%; }
+}
+@media (max-width: 667px) {
+    a { margin-top: 20%; }
+}
+/* for Android */
+@media (max-width: 640px) {
+    body { background: #E01E38 none; }
+    a { margin-top: 0; width: 50% !important; height: 100%; padding: 0; padding-bottom: 20px; }
+    a.Tedu { background: #CC187C; height: inherit; }
+    a.Thealth { margin-left: 0 !important; }
+    p { width: 75%; }
+    a img { width: 45%; margin-top: 30%; }
+}
+/* iPhone6 Landscape */
+@media (max-width: 667px) {
+    
+}
+/* iPhone 6+ Portrait */
+@media (max-width: 414px) {
+    
+}
+/* iPhone 6+ Landscape */
+@media (max-width: 736px) {
+    
+}
